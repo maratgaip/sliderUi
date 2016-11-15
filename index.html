@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <style>
+        .container {
+            width: 800px;
+            margin:auto;
+            background-color: dimgrey;
+            height:300px;
+            color:white;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            position: absolute;
+            height: 300px;
+        }
+        .leftArrow {
+            left:0;
+            line-height: 300px;
+            cursor: pointer;
+            width: 50px;
+            text-align: center;
+            z-index: 100;
+            position: absolute;
+
+        }
+        .rightArrow {
+            right: 0;
+            line-height: 300px;
+            cursor: pointer;
+            width: 50px;
+            text-align: center;
+            z-index: 100;
+            position: absolute;
+        }
+        .leftArrow:hover {
+            background-color: #002b3c;
+        }
+        .rightArrow:hover {
+            background-color: #002b3c;
+        }
+        .buttons {
+            clear: both;
+            bottom: 10px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            border: solid 1px #fff;
+            border-radius: 30px;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: darkgrey;
+        }
+        .button.active {
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
+
+<div class="container">
+
+    <img src="http://www.theresiliencyinstitute.net/wp-content/uploads/2013/09/TRI-Banner-background.jpg">
+
+    <div class="leftArrow"> < </div>
+    <div class="rightArrow"> > </div>
+
+    <div class="buttons">
+        <div class="button active"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+    </div>
+</div>
+
 
 </body>
 </html>
